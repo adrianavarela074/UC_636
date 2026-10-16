@@ -4,8 +4,8 @@ echo "A iniciar a configuração da rede e firewall..."
 echo""
 
 INTERFACE="ens160"
-STATIC_IP="172.16.0.193/24"
-GATEWAY="172.16.0.1"
+STATIC_IP="192.168.0.145/24"
+GATEWAY="192.168.0.1"
 DNS_SERVER="8.8.8.8"
 
 sudo dnf install -y curl
