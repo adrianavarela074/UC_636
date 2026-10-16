@@ -1,0 +1,4 @@
+2026-10-05 18:50:15 -  Ficheiro de log centralizado criado com sucesso
+2026-10-05 18:50:15 - SELinux validade: O estado atual é enforcing
+2026-10-05 18:50:15 - Execução do comando sealert iniciada para análise do audit.log
+2026-10-05 18:50:16 - Relatório do sealert anexado com sucesso ao log centralizado
