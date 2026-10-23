@@ -5,3 +5,9 @@
 2026-10-23 18:17:35 -  Ficheiro de log centralizado criado com sucesso
 2026-10-23 18:17:35 - SELinux validade: O estado atual é enforcing
 2026-10-23 18:17:35 - Ficheiro /var/log/audit/audit.log ausente no sistema
+2026-10-23 20:53:41 -  Ficheiro de log centralizado criado com sucesso
+2026-10-23 20:53:41 - SELinux validade: O estado atual é enforcing
+2026-10-23 20:53:41 - Ficheiro /var/log/audit/audit.log ausente no sistema
+2026-10-23 20:56:44 - SELinux validade: O estado atual é enforcing
+2026-10-23 20:56:44 - Execução do comando sealert iniciada para análise do audit.log
+2026-10-23 20:56:44 - Relatório do sealert anexado com sucesso ao log centralizado
