@@ -4,7 +4,7 @@ echo "A iniciar a configuração da rede e firewall..."
 echo""
 
 INTERFACE="ens160"
-STATIC_IP="192.168.0.145/24"
+STATIC_IP="192.168.0.147/24"
 GATEWAY="192.168.0.1"
 DNS_SERVER="8.8.8.8"
 

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DOMAIN="adrimari.pt"
-SITE_FOLDER="/var/www/${DOMINIO}"
+SITE_FOLDER="/var/www/${DOMAIN}"
 
 echo ""
 echo "Criacao e configuracao de virtual host no apache"
@@ -9,8 +9,7 @@ echo ""
 
 echo ""
 echo "A criar a estrutura de diretorios para ${DOMAIN}..."
-sudo mkdir -p /var/www/adrimari.pt/public_html
-sudo mkdir -p /var/www/adrimari.pt/logs
+sudo mkdir -p "${SITE_FOLDER}"
 
 echo ""
 echo "A estruturar o ficheiro de configuracao no Apache..."
@@ -19,7 +18,6 @@ sudo tee /etc/httpd/conf.d/${DOMAIN}.conf > /dev/null <<EOF
     ServerName ${DOMAIN}
     ServerAlias www.${DOMAIN}
     DocumentRoot ${SITE_FOLDER}/public_html
-    
     ErrorLog ${SITE_FOLDER}/logs/error.log
     CustomLog ${SITE_FOLDER}/logs/access.log combined
 
@@ -33,8 +31,8 @@ EOF
 
 sudo tee "${SITE_FOLDER}/public_html/index.php" > /dev/null <<EOF
 <?php
-echo "<h1>Virtual Host '${DOMAIN}' configurado com sucesso!</h1>";
-echo "<p>Os ficheiros do seu site estao em: ${SITE_FOLDER}/public_html/</p>";
+echo "<h1>Virtual Host '${DOMAIN}' configurado com sucesso!</h1>;"
+echo "<p>Os ficheiros do seu site estao em: ${SITE_FOLDER}/public_html/</p>;"
 ?>
 EOF
 
