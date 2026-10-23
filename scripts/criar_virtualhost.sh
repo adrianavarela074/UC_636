@@ -17,11 +17,11 @@ sudo tee /etc/httpd/conf.d/${DOMAIN}.conf > /dev/null <<EOF
 <VirtualHost *:80>
     ServerName ${DOMAIN}
     ServerAlias www.${DOMAIN}
-    DocumentRoot ${SITE_FOLDER}/public_html
-    ErrorLog ${SITE_FOLDER}/logs/error.log
-    CustomLog ${SITE_FOLDER}/logs/access.log combined
+    DocumentRoot ${SITE_FOLDER}
+    ErrorLog /var/log/httpd/${DOMAIN}_error.log
+    CustomLog /var/log/httpd/${DOMAIN}_access.log combined
 
-    <Directory ${SITE_FOLDER}/public_html>
+    <Directory ${SITE_FOLDER}>
         Options Indexes FollowSymLinks
         AllowOverride All
         Require all granted
